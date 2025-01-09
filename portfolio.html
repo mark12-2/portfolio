@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I'm <strong>Cid, Mark Angelo</strong>. A passionate <strong>student</strong> from Divine Word College of Legazpi.</p>
+        </div>
+    </header>
+
+    
+
+    <main>
+        <div class="about-skills-container">
+            <section id="about">
+                <h2>About Me</h2>
+                <p>I am pursuing a bachelor's degree in Information Technology to become a skilled programmer. 
+                    I am passionate about problem-solving and creating solutions through technology. 
+                    Along with my technical knowledge, I excel at multitasking and collaborating effectively in team environments. 
+                    I am eager to contribute my skills and grow through projects and challenges.</p>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>Angular</li>
+                    <li>Flutter Framework</li>
+                    <li>Firebase</li>
+                    <li>Familiarization with Php and MySQL</li>
+                </ul>
+            </section>
+        </div>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="tabs">
+                <div class="tab" onclick="openTab(event, 'petflex')">
+                    <h3>Petflex</h3>
+                </div>
+                <div class="tab" onclick="openTab(event, 'bluejobs')">
+                    <h3>BlueJobs</h3>
+                </div>
+                <div class="tab" onclick="openTab(event, 'dogdepot')">
+                    <h3>Dog Depot</h3>
+                </div>
+            </div>
+        
+            
+            <div class="tab-content" id="petflex">
+                <h3>Petflex</h3>
+                <p>Petflex is made through Angular framework with Firebase as the main database and also for authentication.</p>
+                <p>It is a simple replica of a social media platform wherein the user can create and interact with posts.</p>
+                <center>
+                <img src="assets/petflex/login.png" alt="Petflex Project" width="700px" height="400px"/>
+                <img src="assets/petflex/homepage.png" alt="Petflex Project" width="700px" height="400px"/>
+                <br><br>
+                <a href="https://github.com/mark12-2/crud_angular/tree/master" target="_blank">View Github</a>
+            </div></center>
+        
+            <div class="tab-content" id="bluejobs" style="display:none;">
+                <h3>BlueJobs</h3>
+                <p>An app made for blue collar workers for job searching.</p>
+                <p>Using Flutter framework and Firebase as its main database and also for authentication.</p>
+                <p>This app has two users, the blue collar workers and the employers with various functionalities depending on the user type.</p>
+                <center>
+                <img src="assets/bluejobs/front.png" alt="BlueJobs Project" width="700px" height="400px"/>
+                <img src="assets/bluejobs/homepage.png" alt="BlueJobs Project" width="700px" height="400px"/>
+                <img src="assets/bluejobs/jobpost.png" alt="BlueJobs Project" width="700px" height="400px"/>
+                <img src="assets/bluejobs/applying.png" alt="BlueJobs Project" width="700px" height="400px"/>
+                <img src="assets/bluejobs/mapping.png" alt="BlueJobs Project" width="700px" height="400px"/>
+                <br><br>
+                <a href="https://github.com/mark12-2/bluejobs_" target="_blank">View Github</a>
+            </div></center>
+        
+            <div class="tab-content" id="dogdepot" style="display:none;">
+                <h3>Dog Depot</h3>
+                <p>Dog Depot is a simple dog adoption and veterinary service center for dogs.</p>
+                <p>It is made using HTML, CSS, and JavaScript for simple functionalities.</p>
+                <center>
+                    <img src="assets/dogdepot/home.png"  width="700px" height="400px"/>
+                    <img src="assets/dogdepot/about.png"  width="700px" height="400px"/>
+                    <img src="assets/dogdepot/resources.png" width="700px" height="400px"/>
+                    <img src="assets/dogdepot/services.png" width="700px" height="400px"/>
+                <br><br>
+                <a href="https://github.com/mark12-2/dogdepot" target="_blank">View Github</a>
+            </div></center>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: 07107820@dwc-legazpi.edu</p>
+            <p>Phone: 09511459839</p>
+            <p>GitHub: mark12-2</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
