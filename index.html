@@ -8,103 +8,118 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container nav-wrap">
+            <div class="brand">MA</div>
+            <nav class="top-nav" aria-label="Main navigation">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+
+        <div class="container hero">
+            <p class="eyebrow">IT graduate • problem solver • creative developer</p>
             <h1>Welcome to My Portfolio</h1>
-            <p>Hi, I'm <strong>Cid, Mark Angelo</strong>.</p>
+            <p>Hi, I'm <strong>Cid, Mark Angelo</strong>, and I enjoy building practical digital solutions through technology.</p>
+            <div class="hero-actions">
+                <a href="#projects" class="primary-btn">View Projects</a>
+                <a href="#contact" class="secondary-btn">Contact Me</a>
+            </div>
         </div>
     </header>
 
-    <main>
+    <main class="container">
         <div class="about-skills-container">
-            <section id="about">
+            <section id="about" class="card">
                 <h2>About Me</h2>
-                <p>I have a bachelor's degree in Information Technology. 
-                    I am a problem-solver by creating solutions through technology. 
-                    Along with my technical knowledge, I can multitask and collaborate effectively in team environments. 
-                    I am eager to learn and contribute my skills, grow through projects and challenges.</p>
+                <p>I have a bachelor's degree in Information Technology and a strong interest in turning ideas into user-centered digital experiences. I enjoy solving problems through technology and collaborating with teams to create meaningful results.</p>
+                <p>Along with my technical knowledge, I can multitask efficiently, communicate clearly, and keep learning as I grow through projects and challenges.</p>
             </section>
 
-            <section id="skills">
+            <section id="skills" class="card">
                 <h2>Skills</h2>
-                <ul>
+                <ul class="skills-list">
                     <li>HTML & CSS</li>
                     <li>JavaScript</li>
                     <li>Angular</li>
                     <li>Flutter Framework</li>
                     <li>Firebase</li>
-                    <li>Familiarization with Php and MySQL</li>
+                    <li>PHP & MySQL</li>
                 </ul>
             </section>
         </div>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="tabs">
-                <div class="tab" onclick="openTab(event, 'petflex')">
-                    <h3>Petflex</h3>
-                </div>
-                <div class="tab" onclick="openTab(event, 'bluejobs')">
-                    <h3>BlueJobs</h3>
-                </div>
-                <div class="tab" onclick="openTab(event, 'dogdepot')">
-                    <h3>Dog Depot</h3>
-                </div>
+        <section id="projects" class="card project-section">
+            <div class="section-heading">
+                <h2>Projects</h2>
             </div>
-        
-            
-            <div class="tab-content" id="petflex">
+
+            <div class="tabs" aria-label="Project tabs">
+                <button class="tab active" type="button" onclick="openTab(event, 'petflex')">
+                    Petflex
+                </button>
+                <button class="tab" type="button" onclick="openTab(event, 'bluejobs')">
+                    BlueJobs
+                </button>
+                <button class="tab" type="button" onclick="openTab(event, 'dogdepot')">
+                    Dog Depot
+                </button>
+            </div>
+
+            <div class="tab-content active" id="petflex">
                 <h3>Petflex</h3>
-                <p>Petflex is made through Angular framework with Firebase as the main database and also for authentication.</p>
-                <p>It is a simple replica of a social media platform wherein the user can create and interact with posts.</p>
-                <center>
-                <img src="assets/petflex/login.png" alt="Petflex Project" width="700px" height="400px"/>
-                <img src="assets/petflex/homepage.png" alt="Petflex Project" width="700px" height="400px"/>
-                <br><br>
-                <a href="https://github.com/mark12-2/crud_angular/tree/master" target="_blank">View Github</a>
-            </div></center>
-        
-            <div class="tab-content" id="bluejobs" style="display:none;">
+                <p>Petflex is built with Angular and Firebase, serving as the main database and authentication system.</p>
+                <p>It is a social-media inspired platform where users can create and interact with posts, making it both practical and engaging.</p>
+                <div class="project-gallery">
+                    <img src="assets/petflex/login.png" alt="Petflex login page" />
+                    <img src="assets/petflex/homepage.png" alt="Petflex homepage" />
+                </div>
+                <a class="project-link" href="https://github.com/mark12-2/crud_angular/tree/master" target="_blank" rel="noreferrer">View GitHub</a>
+            </div>
+
+            <div class="tab-content" id="bluejobs">
                 <h3>BlueJobs</h3>
-                <p>An app made for blue collar workers for job searching.</p>
-                <p>Using Flutter framework and Firebase as its main database and also for authentication.</p>
-                <p>This app has two users, the blue collar workers and the employers with various functionalities depending on the user type.</p>
-                <center>
-                <img src="assets/bluejobs/front.png" alt="BlueJobs Project" width="700px" height="400px"/>
-                <img src="assets/bluejobs/homepage.png" alt="BlueJobs Project" width="700px" height="400px"/>
-                <img src="assets/bluejobs/jobpost.png" alt="BlueJobs Project" width="700px" height="400px"/>
-                <img src="assets/bluejobs/applying.png" alt="BlueJobs Project" width="700px" height="400px"/>
-                <img src="assets/bluejobs/mapping.png" alt="BlueJobs Project" width="700px" height="400px"/>
-                <br><br>
-                <a href="https://github.com/mark12-2/bluejobs_" target="_blank">View Github</a>
-            </div></center>
-        
-            <div class="tab-content" id="dogdepot" style="display:none;">
+                <p>An app designed for blue-collar workers seeking job opportunities through a mobile-friendly interface.</p>
+                <p>Built with Flutter and Firebase, it supports multiple user roles and includes job posting, application, and mapping features.</p>
+                <div class="project-gallery">
+                    <img src="assets/bluejobs/front.png" alt="BlueJobs landing screen" />
+                    <img src="assets/bluejobs/homepage.png" alt="BlueJobs homepage" />
+                    <img src="assets/bluejobs/jobpost.png" alt="BlueJobs job posting screen" />
+                    <img src="assets/bluejobs/applying.png" alt="BlueJobs application screen" />
+                    <img src="assets/bluejobs/mapping.png" alt="BlueJobs mapping feature" />
+                </div>
+                <a class="project-link" href="https://github.com/mark12-2/bluejobs_" target="_blank" rel="noreferrer">View GitHub</a>
+            </div>
+
+            <div class="tab-content" id="dogdepot">
                 <h3>Dog Depot</h3>
-                <p>Dog Depot is a simple dog adoption and veterinary service center for dogs.</p>
-                <p>It is made using HTML, CSS, and JavaScript for simple functionalities.</p>
-                <center>
-                    <img src="assets/dogdepot/home.png"  width="700px" height="400px"/>
-                    <img src="assets/dogdepot/about.png"  width="700px" height="400px"/>
-                    <img src="assets/dogdepot/resources.png" width="700px" height="400px"/>
-                    <img src="assets/dogdepot/services.png" width="700px" height="400px"/>
-                <br><br>
-                <a href="https://github.com/mark12-2/dogdepot" target="_blank">View Github</a>
-            </div></center>
+                <p>Dog Depot is a simple dog adoption and veterinary service website focused on easy browsing and informative content.</p>
+                <p>It was built using HTML, CSS, and JavaScript to provide a clean, accessible experience for users exploring services and resources.</p>
+                <div class="project-gallery">
+                    <img src="assets/dogdepot/home.png" alt="Dog Depot home page" />
+                    <img src="assets/dogdepot/about.png" alt="Dog Depot about page" />
+                    <img src="assets/dogdepot/resources.png" alt="Dog Depot resources page" />
+                    <img src="assets/dogdepot/services.png" alt="Dog Depot services page" />
+                </div>
+                <a class="project-link" href="https://github.com/mark12-2/dogdepot" target="_blank" rel="noreferrer">View GitHub</a>
+            </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="card contact-card">
             <h2>Contact Me</h2>
-            <p>Email: aelacita@gmail.com</p>
-            <p>Phone: 09511459839</p>
-            <p>GitHub: mark12-2</p>
+            <div class="contact-list">
+                <p><strong>Email:</strong> <a href="mailto:aelacita@gmail.com">aelacita@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+639511459839">09511459839</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/mark12-2" target="_blank" rel="noreferrer">mark12-2</a></p>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025. All rights reserved.</p>
+        <p>&copy; 2025 Mark Angelo Cid. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
-
 </body>
 </html>
